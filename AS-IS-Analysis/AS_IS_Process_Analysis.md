@@ -39,7 +39,7 @@ This document represents the current ("AS-IS") state of operations.
 
 ## 4. Current Process 
 
-### Travel Manifest Preparation
+### 4.1 Travel Manifest Preparation
 **Process Objective:** Prepare an accurate travel manifest for airport arrivals and departures by consolidating participant travel information, assigning airport staff and communicating arrival instructions.
 
 **Process Trigger:** Travel forms become available in Portal Site after participants submit their arrival information.
@@ -110,7 +110,7 @@ This document represents the current ("AS-IS") state of operations.
 | IO-06 | Reduce manual communications   |
 | IO-07 | Minimize duplicate data entry  |
 
-### Room Asignment 
+### 4.2 Room Asignment 
 
 **Process Objective:**  
 Assign students to available campus rooms by matching participant information and campus room availability while ensuring room assignments meet program requirements.
@@ -181,7 +181,7 @@ Student participant information becomes available after registration data is col
 | IO-14 | Reduce dependency on individual operational knowledge through improved documentation and process standardization |
 
 
-### Certificate Generation 
+### 4.3 Certificate Generation 
 
 **Process Objective:**  
 Provide students with accurate program completion certificates by retrieving certificate files from Erudio and ensuring certificates match the correct program session and participant information.
