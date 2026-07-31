@@ -338,6 +338,7 @@ The Event Support Report (ESR) becomes available after participant registration 
 | IO-26 | Improve quality control prior to PDF generation and distribution                         |
 
 ## 6. Key Findings
+The following key findings summarize the most significant observations identified across the four operational processes analyzed. These recurring themes highlight common challenges affecting efficiency, data quality, process visibility, and standardization. 
 
 | Finding ID | Observation                                                                              | Impact                                                  |
 | ---------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------- |
@@ -348,9 +349,9 @@ The Event Support Report (ESR) becomes available after participant registration 
 | KF-05      | Operational knowledge is highly dependent on team experience and manual procedures.      | Increased onboarding effort and operational risk.       |
 | KF-06      | Process traceability is limited due to decentralized task management and communications. | Difficult to monitor progress and identify bottlenecks. |
 
+## 7. Conclusion
 
-
-
+The AS-IS analysis identified several recurring patterns across the Event Support operational workflows. Most processes rely heavily on manual data handling, multiple disconnected systems, spreadsheet-based activities, and manual validation, increasing operational effort and the risk of inconsistencies. While certain activities are partially automated, significant opportunities remain to improve process standardization, data quality, traceability, and operational efficiency. These findings establish the baseline for the TO-BE Process Design, where targeted improvements and future-state workflows will be proposed.
 
 
 
