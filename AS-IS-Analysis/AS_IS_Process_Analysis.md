@@ -17,8 +17,8 @@ This document represents the current ("AS-IS") state of operations.
 ## 2. Process Inventory 
 | ID   | Process                     | Status     |
 | ---- | --------------------------- | ---------- |
-| P-01 | Room Assignment             | Documented |
-| P-02 | Travel Manifest Preparation | Documented |
+| P-01 | Travel Manifest Preparation | Documented |
+| P-02 | Room Asignment              | Documented |
 | P-03 | Certificate Generation      | Pending    |
 | P-04 | Name Badge Generation       | Pending    |
 | P-05 | Parent Communications       | Pending    |
@@ -181,5 +181,68 @@ Student participant information becomes available after registration data is col
 | IO-14 | Reduce dependency on individual operational knowledge through improved documentation and process standardization |
 
 
+### Certificate Generation 
+
+**Process Objective:**  
+Provide students with accurate program completion certificates by retrieving certificate files from Erudio and ensuring certificates match the correct program session and participant information.
+
+**Process Trigger:**  
+Certificates become available in Erudio after participant information has been processed and certificate records have been generated for completed program sessions.
+
+**Pocess Steps:**
+| Step | Activity                                                             | System                       | Manual / Automated |
+| ---- | -------------------------------------------------------------------- | ---------------------------- | ------------------ |
+| 1    | Access available certificates for completed program sessions         | Erudio                       | Manual             |
+| 2    | Download certificate files from Erudio                               | Erudio                       | Manual             |
+| 3    | Review downloaded certificate files                                  | Local files/ZIP              | Manual             |
+| 4    | Compare certificate recipients against expected session participants | Event Support Report SQL Server| Manual           |
+| 5    | Identify missing certificates or incorrect certificates              | Excel ESR                    | Manual             |
+| 6    | Validate participant information displayed on certificates           | Certificate Files            | Manual             |
+| 7    | Report certificate discrepancies or request corrections if needed    | Outlook/Teams                | Manual             |
+| 8    | Provide final certificates for distribution                          | SharePoint/Program Resources | Manual             |
+
+**Inputs:**
+| Input                                | Source                    |
+| ------------------------------------ | ------------------------- |
+| Participant registration information | Parent Registration Forms |
+| Student information                  | SQL Server                |
+| Generated certificate files          | Erudio                    |
+
+**Outputs:**
+| Output                                    | Destination                |
+| ----------------------------------------- | -------------------------- |
+| Student certificates                      | Program Resources          |
+| Certificate validation results            | Event Support Team         |
+| List of missing or incorrect certificates | Internal Team              |
+
+**Pain Point:**
+| ID    | Observation                                                                       | Business Impact                                                   |
+| ----- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| AP-14 | Certificate information depends on data entered by parents during registration.   | Incorrect formatting or spelling can appear on official documents |
+| AP-15 | Name formatting is not standardized before certificate generation.                | Inconsistent student names (uppercase/lowercase issues)           |
+| AP-16 | Downloaded certificate packages may contain certificates from incorrect sessions. | Additional manual review required                                 |
+| AP-17 | Some expected certificates may be missing from downloaded files.                  | Delays certificate distribution                                   |
+| AP-18 | Certificate validation requires manual comparison against session participants.   | Increased operational effort                                      |
+| AP-19 | Certificate generation workflow visibility is limited.                            | Difficult to identify where errors originate                      |
+
+**Process Metrics:**
+| KPI                        | Current Observation           |
+| -------------------------- | ----------------------------- |
+| Manual Steps               | High                          |
+| Certificate Validation     | Manual                        |
+| Data Quality Dependency    | High                          |
+| File Verification Required | High                          |
+| System Dependency          | Erudio + Registration Systems |
+| Standardization            | Medium-Low                    |
+
+**Improvement Oportunities**
+| ID    | Opportunity                                                                                       |
+| ----- | ------------------------------------------------------------------------------------------------- |
+| IO-14 | Improve validation of participant information before certificate generation                       |
+| IO-15 | Standardize student name formatting rules across registration and operational systems             |
+| IO-16 | Improve certificate reconciliation between generated certificates and active session participants |
+| IO-17 | Reduce manual effort required to identify missing or incorrect certificates                       |
+| IO-18 | Improve visibility into certificate generation status and completion                              |
+| IO-19 | Establish a standardized certificate quality control process                                      |
 
 
